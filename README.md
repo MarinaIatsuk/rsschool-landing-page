@@ -2,7 +2,7 @@
 
 Учебный проект в рамках курса **RS School (Fullstack Engineering)**: адаптивный двухстраничный сайт кофейни «Coffee House» по готовому макету Figma (Coffee House 2026Q3).
 
-**Часть 1 — «Вёрстка».**
+**Часть 2 — «Функциональность».**
 
 - **Макет Figma:** [Coffee House 2026Q3](https://www.figma.com/design/yuc5s9NCc4jENkk5LdFfvX/Coffee-House-2026Q3?node-id=0-1)
 

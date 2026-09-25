@@ -168,6 +168,50 @@ img {
   transform: translateX(-50%) scaleX(1);
 }
 
+/* Бургер меню */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-body);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 100;
+}
+
+.mobile-nav.is-open {
+  display: block;
+}
+
+.mobile-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 1.5rem;
+  list-style: none;
+}
+
+.mobile-nav__link {
+  display: block;
+  padding: 1rem 0;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+  transition: color 0.3s ease;
+}
+
+.mobile-nav__link:last-child {
+  border-bottom: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .mobile-nav__link:hover {
+    color: var(--text-accent);
+  }
+}
+
 
 .header__actions {
   display: flex;
@@ -348,6 +392,20 @@ img {
 
 .burger__lines::after {
   top: 4px;
+}
+
+.burger.is-open .burger__lines {
+  background-color: transparent;
+}
+
+.burger.is-open .burger__lines::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger.is-open .burger__lines::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 

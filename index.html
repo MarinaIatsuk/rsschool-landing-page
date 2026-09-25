@@ -81,14 +81,23 @@
             </svg>
           </a>
 
-          <button class="burger" type="button" aria-label="Open menu">
+          <button class="burger" id="burger-toggle" type="button" aria-label="Open menu" aria-expanded="false">
             <span class="burger__lines" aria-hidden="true"></span>
           </button>
         </div>
+
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+          <ul class="mobile-nav__list">
+            <li><a class="mobile-nav__link" href="#favorite">Favorite coffee</a></li>
+            <li><a class="mobile-nav__link" href="#about">About</a></li>
+            <li><a class="mobile-nav__link" href="#download">Mobile app</a></li>
+            <li><a class="mobile-nav__link" href="#footer">Contact us</a></li>
+            <li><a class="mobile-nav__link" href="menu.html">Menu</a></li>
+          </ul>
+        </nav>
       </header>
 
       <main class="main">
-        <!-- Hero -->
         <section class="hero" aria-labelledby="hero-title">
           <img class="hero__bg" src="assets/images/img-hero.jpg" alt="" role="presentation">
           <div class="hero__content">
@@ -113,7 +122,6 @@
           </div>
         </section>
 
-        <!-- Favorite coffee: slider -->
         <section class="favorite" id="favorite" aria-labelledby="favorite-title">
           <h2 class="section-title favorite__title" id="favorite-title">
             Choose your <span>favorite</span> coffee
@@ -184,7 +192,6 @@
           </div>
         </section>
 
-        <!-- About -->
         <section class="about" id="about" aria-labelledby="about-title">
           <h2 class="section-title about__title" id="about-title">
             Resource is <span>the perfect and cozy place</span> where you can
@@ -208,7 +215,6 @@
           </div>
         </section>
 
-        <!-- Mobile app -->
         <section class="download" id="download" aria-labelledby="download-title">
           <div class="download__content">
             <h2 class="section-title download__title" id="download-title">
@@ -308,8 +314,10 @@
         </div>
       </footer>
     </div>
-<!-- скрипты перед закрывающим тегом body, чтобы не блокировать загрузку страницы (тут и на странице меню) -->
+
+    <!-- скрипты перед закрывающим тегом body, чтобы не блокировать загрузку страницы (тут и на странице меню) -->
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/burger-menu.js"></script>
     <script src="scripts/slider.js"></script>
-    <script src="scripts/menu.js"></script>     
   </body>
 </html>

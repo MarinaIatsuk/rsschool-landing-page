@@ -81,10 +81,20 @@
             </svg>
           </a>
 
-          <button class="burger" type="button" aria-label="Open menu">
+          <button class="burger" id="burger-toggle" type="button" aria-label="Open menu" aria-expanded="false">
             <span class="burger__lines" aria-hidden="true"></span>
           </button>
         </div>
+
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+          <ul class="mobile-nav__list">
+            <li><a class="mobile-nav__link" href="index.html#favorite">Favorite coffee</a></li>
+            <li><a class="mobile-nav__link" href="index.html#about">About</a></li>
+            <li><a class="mobile-nav__link" href="index.html#download">Mobile app</a></li>
+            <li><a class="mobile-nav__link" href="#footer">Contact us</a></li>
+            <li><a class="mobile-nav__link" href="menu.html">Menu</a></li>
+          </ul>
+        </nav>
       </header>
 
       <main class="main">
@@ -384,5 +394,7 @@
       </footer>
     </div>
     <script src="scripts/theme.js"></script>
+    <script src="scripts/burger-menu.js"></script>
+    <script src="scripts/slider.js"></script>
   </body>
 </html>
