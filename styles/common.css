@@ -262,6 +262,35 @@ img {
   color: var(--text-primary);
 }
 
+/* Scroll-to-top button (fixed bottom-right) */
+.scroll-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1200;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-card-inner);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px var(--shadow-color);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .scroll-top:hover {
+    transform: translateY(-2px);
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
+  }
+}
+
 
 .theme-toggle {
   display: inline-flex;
